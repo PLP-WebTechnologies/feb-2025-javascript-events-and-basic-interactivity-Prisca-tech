@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Great Grace School</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="nav">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- School Image -->
+  <div class="image">
+    <img src="https://img.freepik.com/premium-vector/school-building-perspective_273525-1547.jpg?w=1380" alt="Photo of a school building" />
+  </div>
+  <div class="slideshow">
+  <div class="slide"><img src="assets/school child 1.jpg" alt="school children smilling"></div>
+  <div class="slide"><img src="assets/school child2.jpg" alt="school children standing"></div>
+  <div class="slide"><img src="assets/school child3.jpg" alt="a female student holding/hugging a book"></div>
+</div>
+
+ <div class="tabs">
+    <button class="tab-btn">About</button>
+    <button class="tab-btn">Academics</button>
+    <button class="tab-btn">Contact</button>
+  </div>
+
+  <div class="tab-content">Welcome to our school! We provide a safe, nurturing environment for learners.</div>
+  <div class="tab-content" style="display: none;">We offer classes in science, arts, and technology with expert teachers.</div>
+  <div class="tab-content" style="display: none;">Contact us at info@school.edu or call (123) 456-7890.</div>
+
+
+
+  <!-- School Description -->
+  <div class="section">
+    <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta tempora consequatur, reiciendis veritatis a esse exercitationem harum delectus eos expedita tempore sed, facere debitis repudiandae adipisci fuga sequi quo?</p>
+    </section>
+  </div>
+ <!-- Interractive Buttons -->
+  <button id="colorBtn">Click to Change Color</button>
+      <button id="secretBtn">Double Click Me</button>
+
+  <!-- Registration Form -->
+  <fieldset>
+    <legend>Personal Information</legend>
+    <form id="registerForm" action="/submit" method="post">
+      <h2>Register</h2>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Janet Doe" required><br><br>
+
+      <label for="address">Address</label><br>
+      <input type="text" id="address" name="address" placeholder="No 1, street name city"required><br><br>
+
+      <label for="number">Phone Number:</label><br>
+      <input type="tel" id="number" name="number" placeholder="+234" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="8"><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ng">Nigeria</option>
+        <option value="ug">Uganda</option>
+        <option value="sa">South Africa</option>
+        <option value="ky">Kenya</option>
+        <option value="zm">Zimbabwe</option>
+      </select><br><br>
+
+      <p>Gender:</p>
+      <div><input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br></div>
+      <div><input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label><br></div>
+      <div><input type="radio" id="others" name="gender" value="others" required>
+      <label for="others">Others</label><br><br></div>
+
+      <p>Interests:</p>
+      <div><input type="checkbox" id="coding" name="interests" value="coding">
+      <label for="coding">Coding</label><br></div>
+      <div><input type="checkbox" id="music" name="interests" value="music">
+      <label for="music">Music</label><br></div>
+      <div><input type="checkbox" id="research" name="interests" value="research">
+      <label for="research">Research</label><br></div>
+      <div><input type="checkbox" id="sports" name="interests" value="sports">
+      <label for="sports">Sports</label><br><br></div>
+      <input type="checkbox" id="sports" name="interests" value="sports" label for="sports">Sports</label><br><br>
+
+      <button type="submit" id="registerBtn">Register</button>
+      
+
+
+    </form>
+  </fieldset>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Contact us at: <a href="mailto:oyomepriscilla@gmail.com">oyomepriscilla@gmail.com</a></p>
+    <p>Phone: +123 456 7890</p>
+    <p>&copy; 2025 Great Grace Schools. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.nav ul {
+  list-style: none;
+  background: #333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 0;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+.nav ul li a:hover {
+  background: #555;
+}
+
+/* Main Image */
+.image img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+/* Slideshow */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: 1px solid #28a745;
+  background-color: white;
+  color: #28a745;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.tab-content {
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+
+/* Buttons */
+#colorBtn,
+#secretBtn {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#colorBtn:hover,
+#secretBtn:hover {
+  background-color: #218838;
+}
+
+/* Form */
+form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* form label {
+  display: inline-block;
+  width: 100px;
+  margin-top: 10px;
+}
+
+form input {
+  display: inline-block;
+  width: calc(100% - 110px); /* Adjust based on label width + spacing */
+  /* margin-top: 10px;
+}
+
+form div {
+  margin-bottom: 10px;
+}  */
+*/
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slideshow {
+    height: 200px;
+  }
+
+  .tab-button {
+    flex: 1 1 100%;
+  }
+
+  .slide img {
+    object-fit: cover;
+  }
+}
